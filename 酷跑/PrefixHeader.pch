@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  酷跑
+//
+//  Created by Wayne on 16/5/10.
+//  Copyright © 2016年 WayneHu. All rights reserved.
+//
+//控制程序输出 只要把NSLog 换成MYLog
+#ifdef DEBUG
+#define MYLog(...) NSLog(__VA_ARGS__)
+#else
+#define MYLog(...)
+#endif
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//主机名
+#define WHXMPPHOSTNAME  @"127.0.0.1"
+//端口号
+#define WHXMPPPORT      5222
+//域名
+#define WHXMPPDOMAIN    @"tedu.cn"
+
+//web注册时对应的url
+#define WEBREGISTER_URL     @"http://127.0.0.1:8080/allRunServer/register.jsp"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
