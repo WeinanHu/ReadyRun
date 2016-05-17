@@ -10,7 +10,7 @@
 #import "WHXMPPTool.h"
 #import "WHUserInfo.h"
 #import "WHFriendListCell.h"
-
+#import "WHChatViewController.h"
 @interface WHFriendListController ()<NSFetchedResultsControllerDelegate>
 /**存放好友的数组*/
 //@property(nonatomic,strong) NSArray *friends;
@@ -140,7 +140,16 @@
     }
     
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    XMPPUserCoreDataStorageObject *friend = self.fetchController.fetchedObjects[indexPath.row];
+    [self performSegueWithIdentifier:@"chatSegue" sender:friend.jid];
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.destinationViewController isKindOfClass:[WHChatViewController class]]) {
+        WHChatViewController *chatController = (WHChatViewController*)segue.destinationViewController;
+        chatController.friendJid = sender;
+    }
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

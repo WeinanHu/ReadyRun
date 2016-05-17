@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B006B4B61CEABF780053B687 /* WHMsgFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B006B4B51CEABF780053B687 /* WHMsgFriendCell.m */; };
+		B006B4B91CEABF8A0053B687 /* WHMsgMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B006B4B81CEABF8A0053B687 /* WHMsgMeCell.m */; };
+		B006B4BC1CEAC63C0053B687 /* UIImageView+WHRoundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B006B4BB1CEAC63C0053B687 /* UIImageView+WHRoundImage.m */; };
+		B006B4C21CEAECCC0053B687 /* UIImage+WHThumbNailImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B006B4C11CEAECCC0053B687 /* UIImage+WHThumbNailImage.m */; };
+		B006B4C51CEB09F30053B687 /* WHMyMsgListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B006B4C41CEB09F30053B687 /* WHMyMsgListController.m */; };
+		B006B4C81CEB0E890053B687 /* WHMyMsgListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B006B4C71CEB0E890053B687 /* WHMyMsgListCell.m */; };
+		B006B4EE1CEB1D860053B687 /* NSObject+WHBase64Uncode.m in Sources */ = {isa = PBXBuildFile; fileRef = B006B4ED1CEB1D860053B687 /* NSObject+WHBase64Uncode.m */; };
 		B0B747741CE2BFC400041C48 /* WHRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B747731CE2BFC400041C48 /* WHRegisterViewController.m */; };
 		B0B747BA1CE2DD6000041C48 /* MBProgressHUD+KR.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B747B61CE2DD6000041C48 /* MBProgressHUD+KR.m */; };
 		B0B747BB1CE2DD6000041C48 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0B747B71CE2DD6000041C48 /* MBProgressHUD.bundle */; };
@@ -25,6 +32,7 @@
 		B0D78F261CE582CA00E64E2F /* WHFriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D78F251CE582CA00E64E2F /* WHFriendListController.m */; };
 		B0D78F291CE5A70600E64E2F /* WHFriendListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D78F281CE5A70600E64E2F /* WHFriendListCell.m */; };
 		B0D78F2C1CE5C15D00E64E2F /* WHAddFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D78F2B1CE5C15D00E64E2F /* WHAddFriendController.m */; };
+		B0E44A341CE96428003EBC83 /* WHChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E44A331CE96428003EBC83 /* WHChatViewController.m */; };
 		B0F5E2201CE16CE1003BED2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F5E21F1CE16CE1003BED2C /* main.m */; };
 		B0F5E2231CE16CE1003BED2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F5E2221CE16CE1003BED2C /* AppDelegate.m */; };
 		B0F5E2261CE16CE1003BED2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F5E2251CE16CE1003BED2C /* ViewController.m */; };
@@ -170,6 +178,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B006B4B41CEABF780053B687 /* WHMsgFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMsgFriendCell.h; sourceTree = "<group>"; };
+		B006B4B51CEABF780053B687 /* WHMsgFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMsgFriendCell.m; sourceTree = "<group>"; };
+		B006B4B71CEABF8A0053B687 /* WHMsgMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMsgMeCell.h; sourceTree = "<group>"; };
+		B006B4B81CEABF8A0053B687 /* WHMsgMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMsgMeCell.m; sourceTree = "<group>"; };
+		B006B4BA1CEAC63C0053B687 /* UIImageView+WHRoundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WHRoundImage.h"; sourceTree = "<group>"; };
+		B006B4BB1CEAC63C0053B687 /* UIImageView+WHRoundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WHRoundImage.m"; sourceTree = "<group>"; };
+		B006B4C01CEAECCC0053B687 /* UIImage+WHThumbNailImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WHThumbNailImage.h"; sourceTree = "<group>"; };
+		B006B4C11CEAECCC0053B687 /* UIImage+WHThumbNailImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WHThumbNailImage.m"; sourceTree = "<group>"; };
+		B006B4C31CEB09F30053B687 /* WHMyMsgListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyMsgListController.h; sourceTree = "<group>"; };
+		B006B4C41CEB09F30053B687 /* WHMyMsgListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyMsgListController.m; sourceTree = "<group>"; };
+		B006B4C61CEB0E890053B687 /* WHMyMsgListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMyMsgListCell.h; sourceTree = "<group>"; };
+		B006B4C71CEB0E890053B687 /* WHMyMsgListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMyMsgListCell.m; sourceTree = "<group>"; };
+		B006B4EC1CEB1D860053B687 /* NSObject+WHBase64Uncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WHBase64Uncode.h"; sourceTree = "<group>"; };
+		B006B4ED1CEB1D860053B687 /* NSObject+WHBase64Uncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WHBase64Uncode.m"; sourceTree = "<group>"; };
 		B0868D511CE1B26100414752 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B0B747721CE2BFC400041C48 /* WHRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHRegisterViewController.h; sourceTree = "<group>"; };
 		B0B747731CE2BFC400041C48 /* WHRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHRegisterViewController.m; sourceTree = "<group>"; };
@@ -207,6 +229,8 @@
 		B0D78F281CE5A70600E64E2F /* WHFriendListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHFriendListCell.m; sourceTree = "<group>"; };
 		B0D78F2A1CE5C15D00E64E2F /* WHAddFriendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHAddFriendController.h; sourceTree = "<group>"; };
 		B0D78F2B1CE5C15D00E64E2F /* WHAddFriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHAddFriendController.m; sourceTree = "<group>"; };
+		B0E44A321CE96428003EBC83 /* WHChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHChatViewController.h; sourceTree = "<group>"; };
+		B0E44A331CE96428003EBC83 /* WHChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHChatViewController.m; sourceTree = "<group>"; };
 		B0F5E21B1CE16CE1003BED2C /* 酷跑.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "酷跑.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F5E21F1CE16CE1003BED2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0F5E2211CE16CE1003BED2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -607,6 +631,12 @@
 			children = (
 				B0B747E11CE31DE300041C48 /* NSString+md5.h */,
 				B0B747E21CE31DE300041C48 /* NSString+md5.m */,
+				B006B4BA1CEAC63C0053B687 /* UIImageView+WHRoundImage.h */,
+				B006B4BB1CEAC63C0053B687 /* UIImageView+WHRoundImage.m */,
+				B006B4C01CEAECCC0053B687 /* UIImage+WHThumbNailImage.h */,
+				B006B4C11CEAECCC0053B687 /* UIImage+WHThumbNailImage.m */,
+				B006B4EC1CEB1D860053B687 /* NSObject+WHBase64Uncode.h */,
+				B006B4ED1CEB1D860053B687 /* NSObject+WHBase64Uncode.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -678,12 +708,16 @@
 			children = (
 				B0FB348B1CE45B71003A2085 /* WHMyProfileViewController.h */,
 				B0FB348C1CE45B71003A2085 /* WHMyProfileViewController.m */,
+				B006B4C31CEB09F30053B687 /* WHMyMsgListController.h */,
+				B006B4C41CEB09F30053B687 /* WHMyMsgListController.m */,
 				B0FB348E1CE47ABC003A2085 /* WHEditViewController.h */,
 				B0FB348F1CE47ABD003A2085 /* WHEditViewController.m */,
 				B0D78F241CE582CA00E64E2F /* WHFriendListController.h */,
 				B0D78F251CE582CA00E64E2F /* WHFriendListController.m */,
 				B0D78F2A1CE5C15D00E64E2F /* WHAddFriendController.h */,
 				B0D78F2B1CE5C15D00E64E2F /* WHAddFriendController.m */,
+				B0E44A321CE96428003EBC83 /* WHChatViewController.h */,
+				B0E44A331CE96428003EBC83 /* WHChatViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -700,6 +734,12 @@
 			children = (
 				B0D78F271CE5A70600E64E2F /* WHFriendListCell.h */,
 				B0D78F281CE5A70600E64E2F /* WHFriendListCell.m */,
+				B006B4B41CEABF780053B687 /* WHMsgFriendCell.h */,
+				B006B4B51CEABF780053B687 /* WHMsgFriendCell.m */,
+				B006B4B71CEABF8A0053B687 /* WHMsgMeCell.h */,
+				B006B4B81CEABF8A0053B687 /* WHMsgMeCell.m */,
+				B006B4C61CEB0E890053B687 /* WHMyMsgListCell.h */,
+				B006B4C71CEB0E890053B687 /* WHMyMsgListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1599,9 +1639,12 @@
 				B0F5E40D1CE18E6A003BED2C /* DDASLLogger.m in Sources */,
 				B0F5E3CE1CE18E6A003BED2C /* XMPPRoom.m in Sources */,
 				B0F5E4091CE18E6A003BED2C /* XMPPSRVResolver.m in Sources */,
+				B006B4C51CEB09F30053B687 /* WHMyMsgListController.m in Sources */,
 				B0F5E40B1CE18E6A003BED2C /* GCDAsyncSocket.m in Sources */,
 				B0F5E3DA1CE18E6A003BED2C /* XMPPvCardTempModule.m in Sources */,
+				B0E44A341CE96428003EBC83 /* WHChatViewController.m in Sources */,
 				B0D78F2C1CE5C15D00E64E2F /* WHAddFriendController.m in Sources */,
+				B006B4C81CEB0E890053B687 /* WHMyMsgListCell.m in Sources */,
 				B0F5E3D11CE18E6A003BED2C /* XMPPvCardCoreDataStorage.m in Sources */,
 				B0F5E3C61CE18E6A003BED2C /* XMPPRoomHybridStorage.m in Sources */,
 				B0F5E40A1CE18E6A003BED2C /* XMPPStringPrep.m in Sources */,
@@ -1658,6 +1701,7 @@
 				B0F5E3E01CE18E6A003BED2C /* TURNSocket.m in Sources */,
 				B0F5E4161CE18E6A003BED2C /* DDXMLElement.m in Sources */,
 				B0B747E61CE3334100041C48 /* WHSinaViewController.m in Sources */,
+				B006B4B61CEABF780053B687 /* WHMsgFriendCell.m in Sources */,
 				B0F5E3B71CE18E6A003BED2C /* XMPPRosterMemoryStorage.m in Sources */,
 				B0F5E3C31CE18E6A003BED2C /* XMPPRoomMessageCoreDataStorageObject.m in Sources */,
 				B0F5E4111CE18E6A003BED2C /* ContextFilterLogFormatter.m in Sources */,
@@ -1675,6 +1719,7 @@
 				B0F5E3D21CE18E6A003BED2C /* XMPPvCardCoreDataStorageObject.m in Sources */,
 				B0F5E4041CE18E6A003BED2C /* NSXMLElement+XEP_0335.m in Sources */,
 				B0F5E3B81CE18E6A003BED2C /* XMPPUserMemoryStorageObject.m in Sources */,
+				B006B4BC1CEAC63C0053B687 /* UIImageView+WHRoundImage.m in Sources */,
 				B0B747D81CE3036A00041C48 /* AFURLRequestSerialization.m in Sources */,
 				B0F5E4031CE18E6A003BED2C /* XMPPMessage+XEP_0333.m in Sources */,
 				B0F5E3F71CE18E6A003BED2C /* XMPPMessageDeliveryReceipts.m in Sources */,
@@ -1717,6 +1762,7 @@
 				B0F5E3EC1CE18E6A003BED2C /* XMPPCapsResourceCoreDataStorageObject.m in Sources */,
 				B0F5E3FC1CE18E6A003BED2C /* XMPPTime.m in Sources */,
 				B0F5E3EB1CE18E6A003BED2C /* XMPPCapsCoreDataStorageObject.m in Sources */,
+				B006B4B91CEABF8A0053B687 /* WHMsgMeCell.m in Sources */,
 				B0F5E3B21CE18E6A003BED2C /* XMPPResourceCoreDataStorageObject.m in Sources */,
 				B0F5E3BD1CE18E6A003BED2C /* XMPPJabberRPCModule.m in Sources */,
 				B0F5E3F11CE18E6A003BED2C /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
@@ -1742,7 +1788,9 @@
 				B0F5E4101CE18E6A003BED2C /* DDTTYLogger.m in Sources */,
 				B0F5E3FF1CE18E6A003BED2C /* XMPPAttentionModule.m in Sources */,
 				B0B747D31CE3036A00041C48 /* AFHTTPRequestOperationManager.m in Sources */,
+				B006B4EE1CEB1D860053B687 /* NSObject+WHBase64Uncode.m in Sources */,
 				B0F5E4071CE18E6A003BED2C /* RFImageToDataTransformer.m in Sources */,
+				B006B4C21CEAECCC0053B687 /* UIImage+WHThumbNailImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1857,6 +1905,7 @@
 				GCC_PREFIX_HEADER = "酷跑/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "酷跑/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1875,6 +1924,7 @@
 				GCC_PREFIX_HEADER = "酷跑/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "酷跑/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

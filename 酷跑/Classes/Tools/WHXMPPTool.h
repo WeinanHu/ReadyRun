@@ -38,7 +38,9 @@
 /**增加好友（花名册）模块和对应存储*/
 @property(nonatomic,strong) XMPPRoster *xmppRoster;
 @property(nonatomic,strong) XMPPRosterCoreDataStorage *xmppRosterStorage;
-
+/**消息模块和对应存储*/
+@property(nonatomic,strong) XMPPMessageArchiving *xmppMessageArch;
+@property(nonatomic,strong) XMPPMessageArchivingCoreDataStorage *xmppMessageArchStorage;
 /**登录接口*/
 -(void)userLogin;
 /**公开注册接口*/

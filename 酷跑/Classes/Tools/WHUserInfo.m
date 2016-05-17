@@ -11,4 +11,7 @@
 
 @implementation WHUserInfo
 singleton_implementation(WHUserInfo);
+-(NSString *)jidStr{
+    return [NSString stringWithFormat:@"%@@%@",self.userName,WHXMPPDOMAIN];
+}
 @end

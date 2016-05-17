@@ -20,4 +20,7 @@ singleton_interface(WHUserInfo)
 @property(nonatomic,copy) NSString *registerUserName;
 /**注册的密码*/
 @property(nonatomic,copy) NSString *registerPassword;
+/**用来获取当前用户对应的jidStr*/
+@property(nonatomic,strong) NSString *jidStr;
+
 @end

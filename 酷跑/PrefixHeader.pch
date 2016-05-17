@@ -14,6 +14,10 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+
+#import "UIImageView+WHRoundImage.h"
+#import "UIImage+WHThumbnailImage.h"
+#import "NSObject+WHBase64Uncode.h"
 //主机名
 #define WHXMPPHOSTNAME  @"127.0.0.1"
 //端口号

@@ -18,6 +18,7 @@
 @end
 
 @implementation WHMyProfileViewController
+
 - (IBAction)modifyUserInfo:(id)sender {
 }
 - (IBAction)backAction:(id)sender {

@@ -8,6 +8,7 @@
 
 #import "WHXMPPTool.h"
 #import "WHUserInfo.h"
+
 typedef enum {
     LOGIN,
     REGISTER
@@ -46,7 +47,9 @@ singleton_implementation(WHXMPPTool);
     self.xmppRoster = [[XMPPRoster alloc]initWithRosterStorage:self.xmppRosterStorage];
     //增加代理
     [self.xmppRoster addDelegate:self delegateQueue:dispatch_get_main_queue()];
-    
+    //给消息模块赋值
+    self.xmppMessageArchStorage = [XMPPMessageArchivingCoreDataStorage sharedInstance];
+    self.xmppMessageArch = [[XMPPMessageArchiving alloc]initWithMessageArchivingStorage:self.xmppMessageArchStorage];
     //激活电子名片模块，（激活后沙盒中才有数据库文件）
     [self.xmppvCard activate:self.xmppStream];
     //激活头像模块
@@ -54,7 +57,8 @@ singleton_implementation(WHXMPPTool);
     
     //激活花名册模块
     [self.xmppRoster activate:self.xmppStream];
-    
+    //激活消息模块
+    [self.xmppMessageArch activate:self.xmppStream];
 }
 /**连接服务器*/
 -(void)connectToServer{
@@ -172,12 +176,13 @@ singleton_implementation(WHXMPPTool);
 {
     NSLog(@"index====%ld",buttonIndex);
     if (0 == buttonIndex) {
-        [self.xmppRoster  rejectPresenceSubscriptionRequestFrom:self.fJid];
-    }else if(1== buttonIndex){
         [self.xmppRoster acceptPresenceSubscriptionRequestFrom:self.fJid andAddToRoster:YES];
+    }else if(1== buttonIndex){
+        [self.xmppRoster acceptPresenceSubscriptionRequestFrom:self.fJid andAddToRoster:NO];
     }else if(2== buttonIndex){
         
-        [self.xmppRoster acceptPresenceSubscriptionRequestFrom:self.fJid andAddToRoster:NO];
+        
+        [self.xmppRoster  rejectPresenceSubscriptionRequestFrom:self.fJid];
 
     }
 }
